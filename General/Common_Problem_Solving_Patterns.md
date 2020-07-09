@@ -23,3 +23,7 @@
 #### 1) Write a function which accepts a sorted array and returns the first pair whose sum results in zero.
 
 #### 2) Write a function which accepts a sorted array and returns the number of unique values in that array
+
+### Sliding Window: It's useful when we have an iterable entity like a String or an array, and we want a subsection that has some common property in some sense. Hence this is very useful when we have to keep track of any subarray of an array.
+
+#### 1) Write a function that accepts an array and a number(num), which then returns the largest sum of _num_ consecutive elements of the array.
