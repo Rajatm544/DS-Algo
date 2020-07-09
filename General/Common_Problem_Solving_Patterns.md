@@ -27,3 +27,5 @@
 ### Sliding Window: It's useful when we have an iterable entity like a String or an array, and we want a subsection that has some common property in some sense. Hence this is very useful when we have to keep track of any subarray of an array.
 
 #### 1) Write a function that accepts an array and a number(num), which then returns the largest sum of _num_ consecutive elements of the array.
+
+### Divide and Conquer: We break down the larger array/String/Obj... into smaller chunks and perform some operation on them, rather than on the bigger entity itself. Has applications in searching, sorting algorithms.
