@@ -12,7 +12,7 @@ function recursiveRange(num) {
 }
 
 // Colt's solution
-// function recursiveRange(x){
-//    if (x === 0 ) return 0;
-//    return x + recursiveRange(x-1);
-// }
+function recursiveRange(x) {
+    if (x === 0) return 0;
+    return x + recursiveRange(x - 1);
+}

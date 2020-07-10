@@ -14,7 +14,7 @@ function fib(n) {
 }
 
 // Colt's solution
-// function fib(n){
-//     if (n <= 2) return 1;
-//     return fib(n-1) + fib(n-2);
-// }
+function fib(n) {
+    if (n <= 2) return 1;
+    return fib(n - 1) + fib(n - 2);
+}
