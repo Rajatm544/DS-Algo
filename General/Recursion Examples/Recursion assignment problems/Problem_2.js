@@ -3,10 +3,10 @@
 // e.g., factorial four ( 4! ) is equal to 24, because 4 * 3 * 2 * 1 equals 24.
 // factorial zero (0!) is always 1.
 
-//factorial(1) // 1
-// factorial(2) // 2
-// factorial(4) // 24
-// factorial(7) // 5040
+// factorial(1) -> 1
+// factorial(2) -> 2
+// factorial(4) -> 24
+// factorial(7) -> 5040
 
 // My solution
 function factorial(num) {

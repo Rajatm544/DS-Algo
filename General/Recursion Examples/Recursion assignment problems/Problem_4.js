@@ -4,6 +4,7 @@
 // recursiveRange(6) // 21
 // recursiveRange(10) // 55
 
+// My solution
 function recursiveRange(num) {
     if (num === 1) {
         return 1;
