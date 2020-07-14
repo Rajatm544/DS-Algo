@@ -38,6 +38,7 @@
 ### Comparision betweeen Bubble Sort, Selection Sort and Insertion Sort
 
 -   All of them have quadratic time complexities, but insertion sort does better when the array is _nearly_ sorted., and so does bubble sort. But selection sort is not really useful in most situations.
+-   The space complexity of all 3 sorting techniques is O(1).
 
 ## More Efficient Sorting Techniques
 
@@ -56,3 +57,10 @@
 -   We use recursion to do this.
 -   Use slice to half the array, and do do until the base case of arr.length <= 1
 -   Then call merge() on these subarrays, until the original length of the array is reached.
+
+#### Time And Space Complexities
+
+-   The average, best and worst _time complexity_ of merge sort is **O(n log n)**
+    -   _log n_ as in log<sub>2</sub>n because, we are halving the array until it's of length 1. Which is essentially the power of 2 for which answer is n, which is nothing but log n.
+    -   _n_ because we make rougly n comparisions in the merge() fn.
+-   The _space complexity_ is O(n).
