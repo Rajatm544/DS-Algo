@@ -24,3 +24,15 @@
 -   In one pass, the 1st element is fixed as the smallest.
 -   This way, the sorted array is built up from the beginning of the array, as opposed to the bubble sort technique.
 -   **Time Complexity**: Its O(n<sup>2</sup>)
+
+## Insertion Sort
+
+-   Works by building up the sorted array by **inserting** the array elements into its correct position in the _sorted portion_ of the array.
+-   Start by comparing the 2nd element with the 1st element, swap if necessary.
+-   Iterate through the rest of the array. Then, for each element, iterate through the _sorted portion_ of the array, and _insert_ this element where it needs to be, by making comparisions.
+-   Keep doing this until all the elements have been inserted into their correct positions.
+-   **Time Complexity**: O(n<sup>2</sup>)
+
+## Comparision betweeen Bubble Sort, Selection Sort and Insertion Sort
+
+-   All of them have quadratic time complexities, but insertion sort does better when the array is _nearly_ sorted., and so does bubble sort. But selection sort is not really useful in most situations.
