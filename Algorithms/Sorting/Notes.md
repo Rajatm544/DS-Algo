@@ -44,6 +44,8 @@
 
 ### Merge Sort
 
+##
+
 -   Works by dividing an array into halves continuosly until we end up with arrays of size 0 or 1. This sorting technique works based on the trick that an array with size 0 or 1 are inherently _sorted_
 -   Once we have such arrays, we **merge** them in a way so as to result in a larger but still sorted array.
 -   We continue merging these sorted subarrays until the entire array is sorted.
@@ -64,3 +66,30 @@
     -   _log n_ as in log<sub>2</sub>n because, we are halving the array until it's of length 1. Which is essentially the power of 2 for which answer is n, which is nothing but log n.
     -   _n_ because we make rougly n comparisions in the merge() fn.
 -   The _space complexity_ is O(n).
+
+### Quick Sort
+
+##
+
+-   It works by choosing a **pivot** element, and making sure that all the elements to the left of the pivot element is less than the pivot(not necessarily sorted, they just need to be less than the pivot) and that all the elements to the right of the pivot are all greater than it.
+
+#### placing the pivot element in its correct index
+
+-   Choose a pivot, store its index in a variable, let's say pivotIndex. Loop through the array, if the current element is less than than the pivot, then
+    -   increment the pivotIndex, and swap the current element with the element present at the new pivotIndex
+-   After one iteration through the array, swap the **pivot** with the element present at the pivotIndex
+
+#### Recursively placing all pivot elements in its correct position
+
+-   Assume **left** indicates the start of a subarray, and **right** indicates the last index of the subarray
+-   Do the following only if the **left** pointer is at a lesser index than the **right** pointer
+    -   Start by calling the pivot() fn on the entire array by defaulting the **left** and **right** pointers to the first and last element of the array respectively.
+    -   Then store the return value in the **pivotIndex**
+    -   Use this to recursively call quickSort() with the same array, but from **left** pointer up until **pivotIndex - 1**, for the left part of the array
+    -   For the right part of the array, call quickSort() again, with the same array, but fromm **pointer + 1** to **right**
+-   Once the base case becomes invalid, it means that **left === right**, which means that we now have a subarray of length 1, so we **return arr**
+
+#### Time and Space Complexities
+
+-   The best and average _time_ complexity is O(n logn). But the worst case scenario of the time complexity is O(n<sup>2</sup>).
+-   The _space_ complexity is always O(log n).
