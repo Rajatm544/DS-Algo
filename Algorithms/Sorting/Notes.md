@@ -104,12 +104,14 @@
     <br>
     Ex:
     <span align="center">
+
     | Bucket for digit **3** |
-    | :----------------:|
-    | 123 |
-    | 3 |
-    | 23 |
-    | 44973|
+    | :--------------------: |
+    |          123           |
+    |           3            |
+    |           23           |
+    |         44973          |
+
     </span>
     Then, the array will be reconstructed as 44973, 23, 3, 123,... followed by elements from the bucket for the digit 4, and so on.
 
