@@ -4,8 +4,10 @@
 -   [Tool](https://www.toptal.com/developers/sorting-algorithms) to check performance of various sorting techniques.
 -   The built-in JavaScript sort() sorts items based on their unicode chars. Hence it is going to treat all array items as a string, by default.
     -   But, to get it to sort numbers in ascending order, we can specify the callback function as a parameter as follows:
-        Ex: [2, 33, 11, 312, 4].sort((a, b) => (a - b))
+        <br>
+        Ex 1: [2, 33, 11, 312, 4].sort((a, b) => (a - b))
         Here if the function returns -ve, then a comes before b, i.e in ascending order.
+        <br>
         Ex 2: ["data", "structures", "and", "algorithms"].sort((a, b) => (a.length - b.length))
 -   Visualgo is the [visualizing tool](https://visualgo.net/en/sorting).
 -   The various different sorting algorithms are as follows:
@@ -91,3 +93,48 @@
 
 -   The best and average _time_ complexity is O(n logn). But the worst case scenario of the time complexity is O(n<sup>2</sup>).
 -   The _space_ complexity is always O(log n).
+
+##
+
+### 3) Radix Sort
+
+-   This is **not a comparision sort**! This is an **Integer Sort**, which means that it doesn't compare the values in the array to each other at all, it works because of a property of numbers, which is a mathematical property.
+-   It starts by grouping the array elements into **10 buckets** of digits 0 to 9 (for the decimal number system). It groups the array elements by **checking the digit at the units place** first.
+-   Once an iteration is complete and all the array elements are grouped into buckets such that all array elements in a bucket are all having the same digit at the units place, we reconstruct the array by placing the elements in the buckets, in the order they were filled.
+    Ex: | Bucket for digit **3** |
+    | :----------------:|
+    | 123 |
+    | 3 |
+    | 23 |
+    | 44973|
+
+    Then, the array will be reconstructed as 44973, 23, 3, 123,... followed by elements from the bucket for the digit 4, and so on.
+
+-   Continue till the all the digits in the largest number of the array have been categorized into bucket, according to the digit at the next higher place value, after which the reconstructed array **will be sorted**, even though we never compared any array elements.
+
+#### Helper method 1) Getting the digit at a specific place in a number
+
+-   Use dividing and modulo operations to do this.
+
+#### Helper method 2) Returning the number of digits in a number
+
+-   Use modulo along with a while loop.
+
+#### Helper methos 3} Returning the maximun number of digits in any number of the given array
+
+-   Loop through the array, use the helper method 2, and return the maximum no of digits.
+
+#### Actual sorting pseudocode
+
+-   Find out the most digits in any number of the array
+-   Iterate from 0 up till the most number of digits
+-   For each iteration
+    -   Create buckets for digits 0 - 9 (an array of arrays for all digits)
+    -   place each number in the corresponding bucket based on the _k_ th digit.
+-   Replace original array with the reconstructed array of combination of these buckerts, staring from the 0 bucket.
+-   Return the list at the end.
+
+#### Time and Space Complexity
+
+-   Generally it's accepted that the _best_, _average_, and _worst_ time complexity of radix sort is **O(nk)**, where n is the array size, k is the average number of digits in the array elements.
+-   The space complexity of radix sort is O(n + k).
