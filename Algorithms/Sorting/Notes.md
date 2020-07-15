@@ -12,14 +12,14 @@
 
 ## Quadratic Time Sorting Techniques
 
-### Bubble Sort
+### 1) Bubble Sort
 
 -   Start comparing 2 elements form 1 side of the array, swap if required.
 -   At the end of first pass, the largest number has bubbled to the last index of the array, so ignore the last index in the next pass.
 -   Complete these passes until the array is sorted.
 -   **Time Complexity**: It's O(n<sup>2</sup>)
 
-### Selection Sort
+### 2) Selection Sort
 
 -   Assumes the first element is the smallest. (Or, largest if sorting in descending order)
 -   Finds the minimum value from the array, by comparing each element of the array, then swaps the min element with the first element of the array.
@@ -27,7 +27,7 @@
 -   This way, the sorted array is built up from the beginning of the array, as opposed to the bubble sort technique.
 -   **Time Complexity**: Its O(n<sup>2</sup>)
 
-### Insertion Sort
+### 3) Insertion Sort
 
 -   Works by building up the sorted array by **inserting** the array elements into its correct position in the _sorted portion_ of the array.
 -   Start by comparing the 2nd element with the 1st element, swap if necessary.
@@ -42,9 +42,7 @@
 
 ## More Efficient Sorting Techniques
 
-### Merge Sort
-
-##
+### 1) Merge Sort
 
 -   Works by dividing an array into halves continuosly until we end up with arrays of size 0 or 1. This sorting technique works based on the trick that an array with size 0 or 1 are inherently _sorted_
 -   Once we have such arrays, we **merge** them in a way so as to result in a larger but still sorted array.
@@ -67,9 +65,7 @@
     -   _n_ because we make rougly n comparisions in the merge() fn.
 -   The _space complexity_ is O(n).
 
-### Quick Sort
-
-##
+### 2) Quick Sort
 
 -   It works by choosing a **pivot** element, and making sure that all the elements to the left of the pivot element is less than the pivot(not necessarily sorted, they just need to be less than the pivot) and that all the elements to the right of the pivot are all greater than it.
 
