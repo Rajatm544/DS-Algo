@@ -65,7 +65,7 @@
     -   _n_ because we make rougly n comparisions in the merge() fn.
 -   The _space complexity_ is O(n).
 
----
+##
 
 ### 2) Quick Sort
 
