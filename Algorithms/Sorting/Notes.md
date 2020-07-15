@@ -101,14 +101,16 @@
 -   This is **not a comparision sort**! This is an **Integer Sort**, which means that it doesn't compare the values in the array to each other at all, it works because of a property of numbers, which is a mathematical property.
 -   It starts by grouping the array elements into **10 buckets** of digits 0 to 9 (for the decimal number system). It groups the array elements by **checking the digit at the units place** first.
 -   Once an iteration is complete and all the array elements are grouped into buckets such that all array elements in a bucket are all having the same digit at the units place, we reconstruct the array by placing the elements in the buckets, in the order they were filled.
+    <br>
     Ex:
+    <span align="center">
     | Bucket for digit **3** |
     | :----------------:|
     | 123 |
     | 3 |
     | 23 |
     | 44973|
-
+    </span>
     Then, the array will be reconstructed as 44973, 23, 3, 123,... followed by elements from the bucket for the digit 4, and so on.
 
 -   Continue till the all the digits in the largest number of the array have been categorized into bucket, according to the digit at the next higher place value, after which the reconstructed array **will be sorted**, even though we never compared any array elements.
