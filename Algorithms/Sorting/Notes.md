@@ -65,6 +65,8 @@
     -   _n_ because we make rougly n comparisions in the merge() fn.
 -   The _space complexity_ is O(n).
 
+---
+
 ### 2) Quick Sort
 
 -   It works by choosing a **pivot** element, and making sure that all the elements to the left of the pivot element is less than the pivot(not necessarily sorted, they just need to be less than the pivot) and that all the elements to the right of the pivot are all greater than it.
