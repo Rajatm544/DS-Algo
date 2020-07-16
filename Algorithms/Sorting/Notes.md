@@ -6,6 +6,7 @@
     -   But, to get it to sort numbers in ascending order, we can specify the callback function as a parameter as follows:
         <br>
         Ex 1: [2, 33, 11, 312, 4].sort((a, b) => (a - b))
+        <br>
         Here if the function returns -ve, then a comes before b, i.e in ascending order.
         <br>
         Ex 2: ["data", "structures", "and", "algorithms"].sort((a, b) => (a.length - b.length))
@@ -123,7 +124,7 @@
 
 -   Use modulo along with a while loop.
 
-#### Helper methos 3} Returning the maximun number of digits in any number of the given array
+#### Helper method 3} Returning the maximun number of digits in any number of the given array
 
 -   Loop through the array, use the helper method 2, and return the maximum no of digits.
 
