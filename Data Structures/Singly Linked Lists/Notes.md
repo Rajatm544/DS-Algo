@@ -22,7 +22,7 @@
     5. Increment the length property of the SLL.
     6. Return the linked list.
 
-    ###
+    ##
 
 -   To implement the **pop** function as an instance method:
 
@@ -33,7 +33,7 @@
     5. Set the **tail** of the list to be the **2<sup>nd</sup>-to-last** node.
     6. Return value of the previous tail, reduce length of the list by 1.
 
-    ###
+    ##
 
 -   To implement the **shift** function, which removes a node from the start of the linked list:
 
@@ -43,7 +43,7 @@
     4. Decrement the length of the list by 1.
     5. Return the stored variable
 
-    ###
+    ##
 
 -   To implement the **unshift** function, which adds a node at the start of the linked list:
 
@@ -54,7 +54,7 @@
     5. Increase the length of the list by 1.
     6. Return the list.
 
-    ###
+    ##
 
 -   To implement the **get** function, which retrieves the node from a particular position:
 
@@ -62,7 +62,7 @@
     2. If this index is less than 0, or greater than the length of the linked list, return undefined
     3. Otherwise, traverse the list _index_ times, and return the node at that position.
 
-    ###
+    ##
 
 -   To implement the **set** function which sets the value of a node at a particular position
 
@@ -71,7 +71,7 @@
     3. If get() returns a node, set it's **value** property to the new value, and return true.
     4. Otherwise, if get() returns null, then set() will return false.
 
-    ###
+    ##
 
 -   To implement the **insert** function, which inserts a new node at the specified index
 
@@ -83,7 +83,7 @@
     6. Then, set the **next** property of the newly created node, to the node at the **index** position of the list.
     7. Increment the length, and return true.
 
-    ###
+    ##
 
 -   To implement the **remove** function, which removes a node from the specified index
 
@@ -93,7 +93,7 @@
     4. Otherwise, use the **get()** method to get the node at position **(index - 1)**. Then set the **next** property of this node, to be the node **after** the node at **position _index_**.
     5. Decrement length and return value of the removed node.
 
-    ###
+    ##
 
 -   To implement the **reverse** function, which reverses the linked list in its place, which means that we don't create a new list
 
@@ -106,7 +106,7 @@
         - Set new **currentNode** to be the **nextNode**
     4. Return the list.
 
-    ###
+    ##
 
 ## Time Complexities for all these operations
 
