@@ -9,7 +9,7 @@
 -   Syntax: <br>
 
     ```javascript
-    class Student() {
+    class Student {
         constructor(firstName, lastName) {
             this.firstName = firstName;
             this.lastName = lastName;
@@ -23,7 +23,7 @@
     Ex: <br>
 
     ```javascript
-    class Student() {
+    class Student {
         constructor(firstName, lastName) {
             this.firstName = firstName;
             this.lastName = lastName;
@@ -31,7 +31,7 @@
 
         // Instance method
         fullName() {
-            return `Your full name is ${this.firstName} ${this.lastName}`
+            return `Your full name is ${this.firstName} ${this.lastName}`;
         }
     }
 
@@ -40,3 +40,5 @@
     ```
 
 -   **Class methods** are the functions that are a part of the class as a whole, **they cannot be accessed via an instance**. They are prefixed with the keyword **static** to define them within a class. These are more like utility functions, and are not that commonly used in implementing data structures.
+
+-   Check the respective folders to learn about the various data structures.
