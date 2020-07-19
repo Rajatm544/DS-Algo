@@ -1,5 +1,36 @@
 # Notes
 
-## Notes I made while learning Datastructures and Algorithm from Colt Steele's Udemy Course titled _JavaScript Algorithm and Data Structures Masterclass_
+**Following are the topics covered**
 
--   These are the notes I have made along the course of learning from the above mentioned course.
+## General stuff
+
+-   Big O notation
+-   Problem Solving Approach
+-   Common Problem Solving Patterns
+-   Recursion
+
+## Algorithms
+
+### Searching Algorthims
+
+-   Linear Search
+-   Binary Search
+-   Naive String Pattern Search
+-   KMP String Pattern Search
+
+### Sorting Algorithms
+
+-   Bubble Sort
+-   Insertion Sort
+-   Selection Sort
+-   Merge Sort
+-   Quick Sort
+-   Radix Sort
+
+## Data Structures
+
+-   Arrays
+-   Singly Linked List
+-   Doubly Linked List
+-   Stacks
+-   Queues
