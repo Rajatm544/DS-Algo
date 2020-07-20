@@ -37,20 +37,20 @@
 
 -   To implement **insert()** method to add a new node to the BST, at the correct position
 
-        1.  Create a fn that accepts a **value** and creates a new node using that value.
-        2.  Check if there is a **root** node, if not, then just set the **root** property of the list to be the new node created and return the BST.
-        3.  If there is already a root node, then do the following:
+    1.  Create a fn that accepts a **value** and creates a new node using that value.
+    2.  Check if there is a **root** node, if not, then just set the **root** property of the list to be the new node created and return the BST.
+    3.  If there is already a root node, then do the following:
 
-            -   Store **root** node's value in a variable called **current**.
-            -   If the **current node** being checked has the **same value** as that of the new node, then **return undefined**.
-            -   If the **value** is greater than the current node, Check if there is a node to the **right** of the current node and do the following:
-                -   If there isn't a node to the right of the current node, then just set the **right** property of the **current** node to be the **new node**.
-                -   Otherwise, continue the comparisions.
-            -   Otherwise, check if there is a node to the **left** of the **current** node and do the following:
-                -   If there isn't a node at that position, set the **left** property of the **current** node to be the **new node**.
-                -   Else, continue the comparisions.
+        -   Store **root** node's value in a variable called **current**.
+        -   If the **current node** being checked has the **same value** as that of the new node, then **return undefined**.
+        -   If the **value** is greater than the current node, Check if there is a node to the **right** of the current node and do the following:
+            -   If there isn't a node to the right of the current node, then just set the **right** property of the **current** node to be the **new node**.
+            -   Otherwise, continue the comparisions.
+        -   Otherwise, check if there is a node to the **left** of the **current** node and do the following:
+            -   If there isn't a node at that position, set the **left** property of the **current** node to be the **new node**.
+            -   Else, continue the comparisions.
 
-        4.  Return the tree after inserting the node at the correct position.
+    4.  Return the tree after inserting the node at the correct position.
 
     **Note**: The above process can be done either iteratively or recursively.
 
