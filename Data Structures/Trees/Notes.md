@@ -54,6 +54,8 @@
 
     **Note**: The above process can be done either iteratively or recursively.
 
+    ##
+
 -   To implement **find()** method to check if a given value is present in the BST or not
 
     1. Create a fn which accepts a value that needs to be searched for, in out BST.
