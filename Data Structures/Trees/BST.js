@@ -17,45 +17,45 @@ class BinarySearchTree {
     // To insert a new node at the proper position in the BST
 
     // My approach, doesn't handle duplicate insertions, but very similar to Colt's solution
-    // insert(val) {
-    //     // Create a new node using the value passed.
-    //     let newNode = new Node(val);
+    insert(val) {
+        // Create a new node using the value passed.
+        let newNode = new Node(val);
 
-    //     // Check if the root isn't present
-    //     if (!this.root) {
-    //         // Set the 'root' property to be the newNode
-    //         this.root = newNode;
-    //         // return the tree
-    //         return this;
-    //     } else {
-    //         // Let the current node under consideration be the root node
-    //         let currentNode = this.root;
-    //         // Continuosly comapare the 'left' and 'right' nodes, until the proper position to insert the newNode is found
-    //         while (true) {
-    //             // If the value passed is lesser than the currentNode
-    //             if (val < currentNode.val) {
-    //                 // Check if there isn't a node at the 'left' position of the currentNode;
-    //                 if (!currentNode.left) {
-    //                     // Set currentNode's 'left' property to be the newNode and return the BST
-    //                     currentNode.left = newNode;
-    //                     return this;
-    //                 }
-    //                 // Else continue searching after setting the new currentNode to be the node to the 'left' of the currentNode.
-    //                 currentNode = currentNode.left;
-    //             } else if (val > currentNode.val) {
-    //                 // This means that the value must be inserted somewhere in the right side of the BST
-    //                 // Check if there isn't a node at the 'right' property of the current node
-    //                 if (!currentNode.right) {
-    //                     // Set this property to be the newNode and return the BST
-    //                     currentNode.right = newNode;
-    //                     return this;
-    //                 }
-    //                 // Else, continue searching, after setting the new currentNode to be the node to the 'right' of the currentNode.
-    //                 currentNode = currentNode.right;
-    //             }
-    //         }
-    //     }
-    // }
+        // Check if the root isn't present
+        if (!this.root) {
+            // Set the 'root' property to be the newNode
+            this.root = newNode;
+            // return the tree
+            return this;
+        } else {
+            // Let the current node under consideration be the root node
+            let currentNode = this.root;
+            // Continuosly comapare the 'left' and 'right' nodes, until the proper position to insert the newNode is found
+            while (true) {
+                // If the value passed is lesser than the currentNode
+                if (val < currentNode.val) {
+                    // Check if there isn't a node at the 'left' position of the currentNode;
+                    if (!currentNode.left) {
+                        // Set currentNode's 'left' property to be the newNode and return the BST
+                        currentNode.left = newNode;
+                        return this;
+                    }
+                    // Else continue searching after setting the new currentNode to be the node to the 'left' of the currentNode.
+                    currentNode = currentNode.left;
+                } else if (val > currentNode.val) {
+                    // This means that the value must be inserted somewhere in the right side of the BST
+                    // Check if there isn't a node at the 'right' property of the current node
+                    if (!currentNode.right) {
+                        // Set this property to be the newNode and return the BST
+                        currentNode.right = newNode;
+                        return this;
+                    }
+                    // Else, continue searching, after setting the new currentNode to be the node to the 'right' of the currentNode.
+                    currentNode = currentNode.right;
+                }
+            }
+        }
+    }
 
     // Colt's solution
     insert(val) {
@@ -118,5 +118,3 @@ class BinarySearchTree {
         }
     }
 }
-
-const bst = new BinarySearchTree();
