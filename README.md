@@ -34,3 +34,14 @@
 -   Doubly Linked List
 -   Stacks
 -   Queues
+-   Binary Search Trees
+-   Tree Traversal Techniques
+    1. Breadth First Search (BFS)
+    2. Depth First Search (DFS) :
+        - Pre-Order DFS
+        - Post-Order DFS
+        - In-Order DFS
+-   Binary Heaps
+-   Priority Queue (Using A Min-Binary Heap)
+-   Hash Tables
+-   Graphs
