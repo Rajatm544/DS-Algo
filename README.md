@@ -45,3 +45,10 @@
 -   Priority Queue (Using A Min-Binary Heap)
 -   Hash Tables
 -   Graphs
+-   Graph Traversal
+    1. Breadth First Traversal
+    2. Depth First Traversal (Iterative and Recursive approach)
+
+## Dijkstra's Algorithm
+
+## Dynamic Programming
