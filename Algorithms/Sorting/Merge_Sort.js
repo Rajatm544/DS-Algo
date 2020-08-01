@@ -45,9 +45,11 @@ function merge(arr1, arr2) {
     // add rest of the reamining subarray
     while (i < arr1.length) {
         res.push(arr1[i]);
+        i++;
     }
     while (j < arr2.length) {
         res.push(arr2[j]);
+        j++;
     }
     return res;
 }
