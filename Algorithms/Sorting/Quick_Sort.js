@@ -1,6 +1,6 @@
 // placing the pivot element in its correct position
 
-// My approach
+// My approach, not completely correct
 function pivot(arr) {
     // Let's choose the pivot to be the arr[0] element
     let pivotIndex = 0;
@@ -24,7 +24,7 @@ function pivot(arr, start = 0, end = arr.length - 1) {
     let pivot = arr[start];
     let swapIdx = start;
 
-    for (let i = start + 1; i < arr.length; i++) {
+    for (let i = start + 1; i <= end; i++) {
         if (arr[i] < pivot) {
             swapIdx++;
             [arr[i], arr[swapIdx]] = [arr[swapIdx], arr[i]];
